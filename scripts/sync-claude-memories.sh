@@ -9,7 +9,7 @@
 
 set -euo pipefail
 
-CONFIG_FILE="$HOME/.config/claude-knowledge-vault/config"
+CONFIG_FILE="$HOME/.config/claude-remote-vault/config"
 if [[ -f "$CONFIG_FILE" ]]; then
     # shellcheck source=/dev/null
     source "$CONFIG_FILE"

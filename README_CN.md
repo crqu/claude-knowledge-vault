@@ -1,4 +1,4 @@
-# Claude Knowledge Vault
+# Claude Remote Vault
 
 [English](README.md) | [中文](README_CN.md)
 
@@ -19,7 +19,7 @@
 
 ## 解决方案
 
-Claude Knowledge Vault 会持续把所有 Claude Code 记忆同步到一个 [Obsidian](https://obsidian.md/) 知识库中，你可以在里面浏览、搜索、关联和扩展它们。Claude 存储的每一条反馈偏好、项目决策和参考文档，都会变成你知识图谱中的一篇正式笔记。
+Claude Remote Vault 会持续把所有 Claude Code 记忆同步到一个 [Obsidian](https://obsidian.md/) 知识库中，你可以在里面浏览、搜索、关联和扩展它们。Claude 存储的每一条反馈偏好、项目决策和参考文档，都会变成你知识图谱中的一篇正式笔记。
 
 **为远程工作流而生：** 如果你在远程服务器上开发，这个工具能帮你打通壁垒。服务器上的后台服务会把记忆聚合到知识库中，Syncthing 则自动实时同步到你的本地机器 -- 初始配置之后无需任何手动操作，也不用 SSH 隧道。知识跟着你走，而不是反过来。
 
@@ -50,8 +50,8 @@ Claude Code 会话
 ## 快速开始
 
 ```bash
-git clone https://github.com/crqu/claude-knowledge-vault.git
-cd claude-knowledge-vault
+git clone https://github.com/crqu/claude-remote-vault.git
+cd claude-remote-vault
 ./scripts/install.sh
 ```
 

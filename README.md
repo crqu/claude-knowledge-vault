@@ -1,4 +1,4 @@
-# Claude Knowledge Vault
+# Claude Remote Vault
 
 [English](README.md) | [中文](README_CN.md)
 
@@ -19,7 +19,7 @@ You're building up a valuable knowledge base without knowing it, and you can't u
 
 ## The Solution
 
-Claude Knowledge Vault continuously syncs all Claude Code memories into an [Obsidian](https://obsidian.md/) vault where you can browse, search, link, and build on them. Every feedback preference, project decision, and reference doc Claude stores becomes a first-class note in your knowledge graph.
+Claude Remote Vault continuously syncs all Claude Code memories into an [Obsidian](https://obsidian.md/) vault where you can browse, search, link, and build on them. Every feedback preference, project decision, and reference doc Claude stores becomes a first-class note in your knowledge graph.
 
 **Built for remote workflows:** If you develop on a remote server, this tool bridges the gap. A background service on the server aggregates memories into a vault, and Syncthing automatically syncs it to your local machine in real time — no manual steps, no SSH tunnels after initial setup. Your knowledge follows you, not the other way around.
 
@@ -50,8 +50,8 @@ Claude Code sessions
 ## Quick Start
 
 ```bash
-git clone https://github.com/crqu/claude-knowledge-vault.git
-cd claude-knowledge-vault
+git clone https://github.com/crqu/claude-remote-vault.git
+cd claude-remote-vault
 ./scripts/install.sh
 ```
 

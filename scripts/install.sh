@@ -7,7 +7,7 @@ REPO_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 print_banner() {
     echo ""
     echo "  ╔══════════════════════════════════════╗"
-    echo "  ║     Claude Knowledge Vault           ║"
+    echo "  ║     Claude Remote Vault           ║"
     echo "  ║     Installer v1.0                   ║"
     echo "  ╚══════════════════════════════════════╝"
     echo ""
@@ -25,7 +25,7 @@ echo ""
 echo "Using vault path: $VAULT_PATH"
 
 # --- Step 2: Write config ---
-CONFIG_DIR="$HOME/.config/claude-knowledge-vault"
+CONFIG_DIR="$HOME/.config/claude-remote-vault"
 mkdir -p "$CONFIG_DIR"
 cat > "$CONFIG_DIR/config" <<EOF
 CLAUDE_VAULT_PATH="$VAULT_PATH"

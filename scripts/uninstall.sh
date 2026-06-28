@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-CONFIG_FILE="$HOME/.config/claude-knowledge-vault/config"
+CONFIG_FILE="$HOME/.config/claude-remote-vault/config"
 VAULT_PATH="$HOME/obsidian-vault"
 
 if [[ -f "$CONFIG_FILE" ]]; then
@@ -11,7 +11,7 @@ if [[ -f "$CONFIG_FILE" ]]; then
 fi
 
 echo ""
-echo "  Claude Knowledge Vault — Uninstaller"
+echo "  Claude Remote Vault — Uninstaller"
 echo ""
 
 # --- Step 1: Stop and disable services ---
@@ -40,8 +40,8 @@ for cmd in sync-knowledge vault-note; do
 done
 
 # --- Step 3: Remove config ---
-if [[ -d "$HOME/.config/claude-knowledge-vault" ]]; then
-    rm -rf "$HOME/.config/claude-knowledge-vault"
+if [[ -d "$HOME/.config/claude-remote-vault" ]]; then
+    rm -rf "$HOME/.config/claude-remote-vault"
     echo "[ok] Removed config"
 fi
 
