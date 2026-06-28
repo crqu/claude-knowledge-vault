@@ -1,0 +1,26 @@
+# Syncthing internal files
+.stfolder
+.stversions/
+.stignore
+*.sync-conflict-*
+
+# Obsidian workspace state (user-specific)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/*/data.json
+
+# Syncthing config (contains API keys and device IDs)
+config.xml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor swap files
+*.swp
+*.swo
+*~
+
+# Test artifacts
+test-*.md
+test-server/

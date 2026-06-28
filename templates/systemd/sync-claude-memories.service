@@ -1,0 +1,12 @@
+[Unit]
+Description=Sync Claude Code memories to Obsidian vault
+After=network.target
+
+[Service]
+Type=simple
+ExecStart={{VAULT_PATH}}/bin/sync-claude-memories.sh --watch
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target
