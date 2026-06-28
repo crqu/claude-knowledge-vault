@@ -1,3 +1,5 @@
+# Based on Syncthing's official systemd template (MPL-2.0)
+# https://github.com/syncthing/syncthing/blob/main/etc/linux-systemd/user/syncthing.service
 [Unit]
 Description=Syncthing - Open Source Continuous File Synchronization
 Documentation=man:syncthing(1)
