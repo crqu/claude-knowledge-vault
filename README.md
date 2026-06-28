@@ -1,5 +1,7 @@
 # Claude Knowledge Vault
 
+[English](README.md) | [中文](README_CN.md)
+
 Turn Claude Code's scattered, invisible memories into a persistent, searchable knowledge base — powered by Obsidian.
 
 ## The Problem
@@ -11,11 +13,15 @@ Every time Claude Code learns your preferences, build toolchains, writing style,
 - **Disconnected** from your note-taking workflow
 - **Trapped** on one machine with no multi-device access
 
+If you work on remote servers — GPU clusters, cloud VMs, shared dev boxes — the problem is even worse. Your hard-earned knowledge lives on a machine you don't carry with you, inaccessible from your laptop, phone, or any other device.
+
 You're building up a valuable knowledge base without knowing it, and you can't use it.
 
 ## The Solution
 
 Claude Knowledge Vault continuously syncs all Claude Code memories into an [Obsidian](https://obsidian.md/) vault where you can browse, search, link, and build on them. Every feedback preference, project decision, and reference doc Claude stores becomes a first-class note in your knowledge graph.
+
+**Built for remote workflows:** If you develop on a remote server, this tool bridges the gap. A background service on the server aggregates memories into a vault, and Syncthing automatically syncs it to your local machine in real time — no manual steps, no SSH tunnels after initial setup. Your knowledge follows you, not the other way around.
 
 ```
 Claude Code sessions
@@ -35,6 +41,7 @@ Claude Code sessions
 ## What You Get
 
 - **Automatic sync** — a background service watches for new memories and copies them into your vault, organized by project
+- **Remote-to-local sync** — seamlessly bridge remote servers and local machines with Syncthing; your knowledge arrives on your laptop in real time, no manual transfer needed
 - **Slash commands** — `/sync-knowledge` to force-sync and get a summary; `/vault-note` to save notes from any Claude session
 - **Obsidian dashboard** — a home page with Dataview queries showing recent changes across all projects
 - **Multi-device access** — optional Syncthing setup for real-time bidirectional sync to any machine
